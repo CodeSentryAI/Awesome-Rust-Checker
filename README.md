@@ -80,6 +80,7 @@ Academic Papers (source code not found yet)
 | [rtsan-standalone-rs](https://github.com/realtime-sanitizer/rtsan-standalone-rs) | Standalone RealtimeSanitizer for Rust. [Blogpost](https://steck.tech/posts/rtsan-in-rust/) | Soure Code | Real-time Violations | Instrumentation | 2025-09-27 |
 | [verified-ledger](https://github.com/welltyped-systems/verified-ledger) | A reference architecture for differential fuzzing using a formally verified oracle | Source Code, Lean | model-based conformance testing of critical systems | Differential fuzzing + Formal verifid oracle | 2026-01-02 |
 | [RustSan](https://github.com/sslab-skku/RustSan) | RustSan: Retrofitting AddressSanitizer for Efficient Sanitization of Rust. Paper: [USENIX Security'24](https://www.usenix.org/conference/usenixsecurity24/presentation/cho-kyuwon) | LLVM IR | Memory bugs | Instrumentation | 2024-10-11 |
+| [SafeFFI](https://zenodo.org/records/18940953) | Efficient Sanitization at the Boundary Between Safe and Unsafe Code in Rust and Mixed-Language Applications [USENIX Security'26](https://www.plai.ifi.lmu.de/publications/usenixsecurity26-safeffi.pdf) [NDSS'24 Poster](https://www.ndss-symposium.org/wp-content/uploads/ndss24-posters-37.pdf)| MIR, LLVM IR | Memory safety in C/C++ and Rust Mixed Code | Instrumentation | 2026-03-10 |
 
 Academic Papers (source code not found yet)
 
@@ -90,7 +91,6 @@ Academic Papers (source code not found yet)
 | Rustcheck | Safety Enhancement of Unsafe Rust via Dynamic Program Analysis. [Rustcheck, QRS-C'23](https://ieeexplore.ieee.org/document/10429951) | MIR | Memory vulnerabilities | Static Program Analysis, Instrumentation |
 | RUSTY | A Fuzzing Tool for Rust. [Poster@ACSAC'20](https://www.acsac.org/2020/program/poster-wips/2020-3-RUSTY%20%20A%20Fuzzing%20Tool%20for%20Rust.pdf) | - | Vulnerabilities | Fuzzing, Concolic Testing, Property-based Testing |
 | Rust-twins | Automatic Rust Compiler Testing through Program Mutation and Dual Macros Generation. [ASE'24](https://wzyang.cn/files/Rust_twins.pdf) | AST, HIR | Rust compiler crashes and differences  | Differential testing, mutation, macroize components, LLM |
-| SafeFFI | Poster: Ensuring Memory Safety for the Transition from C/C++ to Rust. [NDSS'24](https://www.ndss-symposium.org/wp-content/uploads/ndss24-posters-37.pdf)| LLVM IR | Memory safety in C/C++ and Rust Mixed Code | Existing sanitiers: HWASAN, SoftBound/CETS |
 | LiteRSan | LiteRSan: Lightweight Memory Safety Via Rust-specific Program Analysis and Selective Instrumentation. [arxiv](https://arxiv.org/pdf/2509.16389) | MIR, LLVM IR | Memory access bugs | Fuzzing |
 
 
