@@ -51,6 +51,7 @@ A curated list of awesome Rust analysis and verification tools, including linter
 | [Rust-API-Bypass-Checker](https://github.com/Rust-API/Rust-API-Bypass-Checker) | A conservative MIR-based static analysis tool that identifies redundant safety checks in Rust programs to improve performance | MIR | Redundant safety checks | Interval analysis | 2026-05-22 |
 | [the-janitor](https://github.com/janitor-security/the-janitor) | Rust static-analysis security research platform for IFDS, Z3/Kani proof obligations, exploit-witness generation | MIR, LLVM IR | Security vulnerabilities, Memory safety | Static Analysis, Symbolic Execution | 2026-06-02 |
 | [Crema](https://github.com/AFx3/crema-static-analyzer) | Static analysis tool for Rust-C FFI detecting memory leaks, double-free and use-after-free in pure unsafe Rust and Rust-C interaction. Paper: [SEFM'25](https://doi.org/10.1007/978-3-032-10444-1_11) | LLVM IR (SVF) | Memory leak, Double-free, Use-after-free (FFI) | Static Value-Flow Analysis | 2025-12-06 |
+| [Rust-IR-BERT](https://github.com/Boshra-01/Rust-IR-BERT) | Machine Learning-Based Vulnerability Detection in Rust Code Using LLVM IR and Transformer Model. Paper: [Machine Learning and Knowledge Extraction](https://www.mdpi.com/2504-4990/7/3/79) | Source Code, LLVM IR | Vulnerabilities | BERT | 2026-10-20 |
 
 ---
 
@@ -83,6 +84,8 @@ A curated list of awesome Rust analysis and verification tools, including linter
 | [test-fuzz](https://github.com/trailofbits/test-fuzz) | To make fuzzing Rust easy - automated fuzz target generation | Source Code | Panics, Crashes | Fuzzing | 2026-06-04 |
 | [fuzzcheck-rs](https://github.com/loiclec/fuzzcheck-rs) | Modular, structure-aware, and feedback-driven fuzzing engine for Rust functions | Source Code | Panics, Crashes | Fuzzing | 2026-01-22 |
 | [honggfuzz-rs](https://github.com/rust-fuzz/honggfuzz-rs) | Fuzz your Rust code with Google-developed Honggfuzz | Binary | Memory corruption, Panics | Fuzzing (Honggfuzz) | 2026-03-28 |
+| [deepSURF](https://github.com/purseclab/deepSURF) | deepSURF: Detecting Memory Safety Vulnerabilities in Rust Through Fuzzing LLM-Augmented Harnesses. Paper: [IEEE S&P'26](https://arxiv.org/abs/2506.15648) | HIR, MIR | Memory Bugs | Hybrid, LLM | 2025-11-29 |
+| [rl-guided-static-analysis-rust](https://github.com/Akileshdash/rl-guided-static-analysis-rust) | A reinforcement learning–guided framework for reducing false positives in static memory safety analysis of Rust programs. Paper: [P Akilesh](https://arxiv.org/abs/2605.04000) | MIR | Reduce FPs of Memory Bugs | Hybrid, RL | 2026-01-26 |
 
 1. The link may be incorrect. See [here](https://wcventure.github.io/EnPage/opensource/2023-12-05-RPG).
 2. casr analyze the results of dynamic checkers instead of performing dynamic analysis itself. Thanks [zjp-CN](https://github.com/zjp-CN) for recommending casr.
