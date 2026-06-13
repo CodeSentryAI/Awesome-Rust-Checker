@@ -81,7 +81,7 @@ A curated list of awesome Rust analysis and verification tools, including linter
 | [Hopper](https://github.com/FuzzAnything/Hopper) | Hopper is a tool for generating fuzzing test cases for libraries automatically using interpretative fuzzing | Binary | Library API bugs | Fuzzing | 2026-05-16 |
 | [dhat-rs](https://github.com/nnethercote/dhat-rs) | Heap profiling and ad hoc profiling for Rust programs | - | Memory leaks, Heap allocation patterns | Instrumentation | 2025-02-20 |
 | [afl.rs](https://github.com/rust-fuzz/afl.rs) | Fuzzing Rust code with American Fuzzy Lop | Binary | Memory corruption, Panics, Crashes | Fuzzing (AFL) | 2026-05-11 |
-| [LibAFL](https://github.com/AFLplusplus/LibAFL) | Advanced Fuzzing Library - Slot your Fuzzer together in Rust! Scales across cores and machines | Binary | Memory corruption, Panics, Crashes | Fuzzing Framework | 2026-05-19 |
+| [LibAFL](https://github.com/AFLplusplus/LibAFL) | Advanced Fuzzing Library - Slot your Fuzzer together in Rust! Scales across cores and machines. [PR#981](https://github.com/AFLplusplus/LibAFL/pull/981) from Paper: [CrabSandwich, Fuzzing'23](https://dl.acm.org/doi/abs/10.1145/3605157.3605176). See [issue#5](https://github.com/CodeSentryAI/Awesome-Rust-Checker/issues/5) | Binary | Memory corruption, Panics, Crashes | Fuzzing Framework | 2026-05-19 |
 | [test-fuzz](https://github.com/trailofbits/test-fuzz) | To make fuzzing Rust easy - automated fuzz target generation | Source Code | Panics, Crashes | Fuzzing | 2026-06-04 |
 | [fuzzcheck-rs](https://github.com/loiclec/fuzzcheck-rs) | Modular, structure-aware, and feedback-driven fuzzing engine for Rust functions | Source Code | Panics, Crashes | Fuzzing | 2026-01-22 |
 | [honggfuzz-rs](https://github.com/rust-fuzz/honggfuzz-rs) | Fuzz your Rust code with Google-developed Honggfuzz | Binary | Memory corruption, Panics | Fuzzing (Honggfuzz) | 2026-03-28 |
@@ -166,7 +166,6 @@ A curated list of awesome Rust analysis and verification tools, including linter
 
 | Name | Description | Working on | Bug Types | Technology |
 | -----| ----------- | ---------- | ----------|----------- |
-| CrabSandwich | CrabSandwich: Fuzzing Rust with Rust. [CrabSandwich, Fuzzing'23](https://dl.acm.org/doi/abs/10.1145/3605157.3605176) | LLVM IR | Out-of-bounds, Panic | Fuzzing |
 | Zhiyong Ren | Detect Stack Overflow Bugs in Rust via Improved Fuzzing Technique. [Zhiyong Ren, SEKE'21](https://dl.acm.org/doi/abs/10.1145/3485832.3485841) | AST, HIR, MIR, LLVM IR | Stack Overflow | Fuzzing |
 | Rustcheck | Safety Enhancement of Unsafe Rust via Dynamic Program Analysis. [Rustcheck, QRS-C'23](https://ieeexplore.ieee.org/document/10429951) | MIR | Memory vulnerabilities | Static Program Analysis, Instrumentation |
 | RUSTY | A Fuzzing Tool for Rust. [Poster@ACSAC'20](https://www.acsac.org/2020/program/poster-wips/2020-3-RUSTY%20%20A%20Fuzzing%20Tool%20for%20Rust.pdf) | - | Vulnerabilities | Fuzzing, Concolic Testing, Property-based Testing |
