@@ -32,7 +32,7 @@ A curated list of awesome Rust analysis and verification tools, including linter
 
 | Name | Description | Working on | Bug Types | Technology | Last Commit Time |
 | -----| ----------- | ---------- | ----------|-----------| ----------- |
-| [MIRAI](https://github.com/endorlabs/MIRAI) | Rust mid-level IR Abstract Interpreter | MIR | Panic, Security bugs, Correctness | Abstract Interpretation | 2025-03-04 |
+| [MIRAI](https://github.com/endorlabs/MIRAI) | Rust mid-level IR Abstract Interpreter, Paper: [arxiv](https://arxiv.org/pdf/2607.01504) | MIR | Panic, Security bugs, Correctness | Abstract Interpretation | 2025-03-04 |
 | [lockbud](https://github.com/BurtonQin/lockbud) | Statically detect common memory and concurrency bugs in Rust. Paper: [Safety Issues in Rust, TSE'24](https://songlh.github.io/paper/rust-tse.pdf) | MIR | Double-Lock, Conflicting-Lock-Order, Atomicity-Violation, Use-After-Free, Invalid-Free, Panic Locations | Data-flow Analysis | 2026-05-15 |
 | [RAPx](https://github.com/safer-rust/RAPx) | This is a static analysis project for analyzing Rust program. Paper: [SafeDrop, TOSEM'22](https://dl.acm.org/doi/10.1145/3542948), [RCanary, TSE'24](https://arxiv.org/pdf/2308.04787) | HIR, MIR | Use-After-Free, Memory Leakage | Static Program Analysis, Model Checking | 2026-06-04 |
 | [safety-tags](https://github.com/safer-rust/safety-tags) | Tag the safety properties of the Rust standard library. Paper: [arxiv](https://arxiv.org/pdf/2504.21312) | Source Code | Unsafe | Annotation | 2026-04-24 |
