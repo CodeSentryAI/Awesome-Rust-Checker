@@ -2,7 +2,7 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-> Contributions welcomed! Last updated: 2026-06-06
+> Contributions welcomed! Last updated: 2026-08-21
 
 A curated list of awesome Rust analysis and verification tools, including linters, static analyzers, dynamic analyzers, formal verifiers, and security tooling.
 
