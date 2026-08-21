@@ -60,7 +60,8 @@ A curated list of awesome Rust analysis and verification tools, including linter
 
 | Name | Description | Working on | Bug Types | Technology | Last Commit Time |
 | -----| ----------- | ---------- | ----------| -----------| ----------- |
-| [miri](https://github.com/rust-lang/miri) | An interpreter for Rust's mid-level intermediate representation. Paper: [Miri, POPL'26](https://dl.acm.org/doi/abs/10.1145/3776690) | MIR | Undefined Behavior | Abstract Interpretation | 2026-06-06 |
+| [miri](https://github.com/rust-lang/miri) | An interpreter for Rust's mid-level intermediate representation. Paper: [Miri: Practical Undefined Behavior Detection for Rust, POPL'26](https://dl.acm.org/doi/abs/10.1145/3776690) | MIR | Undefined Behavior | Concrete Interpretation / Dynamic Analysis | 2026-08-21 |
+| [BorrowSanitizer](https://github.com/borrowSanitizer/bsan) | Work-in-progress LLVM instrumentation pass for detecting aliasing violations in multi-language Rust applications. | LLVM IR | Borrowing/Aliasing Model Violations | LLVM Instrumentation, Shadow Memory | 2026-08-21 |
 | [cargo-careful](https://github.com/RalfJung/cargo-careful) | Execute Rust code carefully, with extra checking along the way | - | Undefined Behavior | Enable Debug Assertion in std | 2026-04-01 |
 | [cargo-fuzz](https://github.com/rust-fuzz/cargo-fuzz) | Command line helpers for fuzzing | Binary | Crashes, Panics, Memory errors | Fuzzing | 2026-05-26 |
 | [Loom](https://github.com/tokio-rs/loom) | Concurrency permutation testing tool for Rust. | Source Code | Concurrency Bugs | Permutation testing | 2026-02-20 |
@@ -154,6 +155,8 @@ A curated list of awesome Rust analysis and verification tools, including linter
 | ACORN | ACORN: Towards a Holistic Cross-Language Program Analysis for Rust. [ACORN](https://csslab-ustc.github.io/publications/2023/acorn.pdf) | Wasm | Security (Tainted Variable, Dangerous Function, Format String Attack), Memory issues (Out-of-bounds, Use-after-Free, Double-Free, Stack-Overflow, Buffer-Overflow), Arithmetic (Divide-by-zero, Integer-Overflow) | Program Analysis Framework |
 | Yu Zhang | Static Deadlock Detection for Rust Programs. [Yu Zhang](https://arxiv.org/abs/2401.01114) | MIR | Deadlock | Data-flow Analysis |
 | Yu Zhang | Two Birds One Stone: Effective Static Detection of Resource and Communication Deadlocks in Rust Programs. [Automated Software Engineering'26](https://arxiv.org/abs/2401.01114) | MIR | Resource deadlock, Communication deadlock | Data-flow Analysis |
+| Zeyang Zhuang, Wei Meng, Michael R. Lyu | Rusted Types: Static Detection of Rust Type Confusion Bugs. [ICSE'26](https://conf.researchr.org/details/icse-2026/icse-2026-research-track/54/Rusted-Types-Static-Detection-of-Rust-Type-Confusion-Bugs) | MIR | Type confusion, Unsafe conversion bugs | Inter-procedural data-flow analysis |
+| RustGuard authors | RustGuard: A Compile-Time Verification Framework for Memory Safety in Distributed Rust Applications. [ICPCSN'26](https://ieeexplore.ieee.org/document/11543784/) | MIR | Distributed ownership, Causal lifetime, Resource/communication conflicts | Ownership and causality graphs |
 | Kaiwen Zhang | Automatically Transform Rust Source to Petri Nets for Checking Deadlocks. [Kaiwen Zhang](https://arxiv.org/abs/2212.02754) | MIR | Deadlock | Petri Nets |
 | RustC4 | Leveraging Large Language Model to Assist Detecting Rust Code Comment Inconsistency. [ASE'24](https://dl.acm.org/doi/10.1145/3691620.3695010) | AST | Code Comment Inconsistency | LLM |
 | RustC4++ | RustC4++: Improving Rust Code-Comment Inconsistency Detection via Hybrid LLM and Static Analysis. [OOPSLA'26](https://dl.acm.org/doi/epdf/10.1145/3800689) | AST | Code Comment Inconsistency | LLM, Static Analysis, SMT |
@@ -172,7 +175,7 @@ A curated list of awesome Rust analysis and verification tools, including linter
 | Rust-twins | Automatic Rust Compiler Testing through Program Mutation and Dual Macros Generation. [ASE'24](https://wzyang.cn/files/Rust_twins.pdf) | AST, HIR | Rust compiler crashes and differences | Differential testing, mutation, macroize components, LLM |
 | LiteRSan | LiteRSan: Lightweight Memory Safety Via Rust-specific Program Analysis and Selective Instrumentation. [arxiv](https://arxiv.org/pdf/2509.16389) | MIR, LLVM IR | Memory access bugs | Fuzzing |
 | FRIES | Fuzzing Rust Library Interactions via Efficient Ecosystem-Guided Target Generation. [FRIES, ISSTA'24](https://dl.acm.org/doi/pdf/10.1145/3650212.3680348) | MIR | Rust API interactions | Fuzzing |
-| PanicKiller | Don't Panic! Finding Bugs Hidden Behind Rust Runtime Safety Checks. [CCS'25](https://dl.acm.org/doi/pdf/10.1145/3719027.3765142) | LLVM IR | Bugs hidden behind runtime safety checks | Cross-IR analysis, Dynamic taint analysis, Fuzzer |
+| PanicKiller | Don't Panic! Finding Bugs Hidden Behind Rust Runtime Safety Checks. Zeyang Zhuang, Zilun Wang, Wei Meng, Michael R. Lyu. [CCS'25, pp. 186–200](https://dl.acm.org/doi/10.1145/3719027.3765142) | LLVM IR, Cross-IR | Bugs hidden behind runtime safety checks, Unsafe-code vulnerabilities | Cross-IR analysis, Dynamic taint analysis, Input prioritization/mutation, Fuzzing |
 
 ### Verification Papers (no source code yet)
 
